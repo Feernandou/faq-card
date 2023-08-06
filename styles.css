@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+body main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 15px;
+  margin-inline: 2em;
+  overflow: hidden;
+}
+body main .image {
+  width: 500px;
+}
+body main .image .woman {
+  position: relative;
+  left: -70px;
+}
+body main .image .box {
+  transform: translate(-565px, 130px);
+  position: absolute;
+}
+body main .info {
+  padding-block: 4em;
+  padding-inline: 5em;
+}
+body main article {
+  padding: 20px;
+  padding-left: 0;
+  cursor: pointer;
+}
+body main article > h4 {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  font-weight: 400;
+  padding-block: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body main article > h4 > img {
+  padding-left: 50px;
+  padding-bottom: 5px;
+}
+body main article > h4 > img > path {
+  background-color: white;
+}
+body main article .menuList {
+  display: none;
+  max-height: 0;
+  width: 500px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+@media screen and (max-width: 1120px) {
+  body main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-block: 2em;
+  }
+  body main .image {
+    background-image: url("./images/illustration-woman-online-mobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  body main .image .woman {
+    opacity: 0;
+  }
+  body main .image .box {
+    display: none;
+  }
+  body main .info > h1 {
+    text-align: center;
+  }
+}/*# sourceMappingURL=styles.css.map */

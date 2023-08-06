@@ -1,0 +1,67 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, $violet, $softBlue);
+    main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+        background-color: white;
+        border-radius: 15px;
+        margin-inline: 2em;
+        overflow: hidden;
+        .image{
+            width: 500px;
+            .woman{
+               
+               position: relative;
+               left: -70px;
+            }
+            .box{
+                transform: translate(-565px,130px);
+                position: absolute;
+                
+            }
+        }
+        .info{
+            padding-block: 4em;
+            padding-inline: 5em;
+        }
+        article{
+            
+            padding: 20px;
+            padding-left: 0;
+            cursor: pointer;
+            >h4{
+                border-bottom: 1px solid $lightGrayishBlue;
+                font-weight: 400;
+                padding-block: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                
+                >img{
+                    padding-left: 50px;
+                    padding-bottom: 5px;
+                    >path{
+                        background-color: white;
+                    }
+                }
+                
+            }
+            .menuList{
+                display: none; 
+                max-height: 0;
+                width: 500px;
+                overflow: hidden; 
+                transition: max-height 0.5s ease; 
+            }
+        }
+    }
+}
